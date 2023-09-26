@@ -1,3 +1,9 @@
+import HeroSection from './components/heroSection'
+
 export default function Home() {
-  return <main>IBM Test</main>
+  return (
+    <main>
+      <HeroSection />
+    </main>
+  )
 }
