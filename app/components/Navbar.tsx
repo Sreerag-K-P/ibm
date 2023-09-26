@@ -54,7 +54,7 @@ const Navbar = () => {
           Support <ChevronDownIcon className="h-6 w-6 text-gray-500" />
         </div>
         <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
-          More <ChevronDownIcon className="h-6 w-6 text-gray-500" />
+          More items <ChevronDownIcon className="h-6 w-6 text-gray-500" />
         </div>
       </div>
       <div className="flex">
