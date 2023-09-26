@@ -1,14 +1,18 @@
 import {
+  Bars4Icon,
   ChevronDownIcon,
   MagnifyingGlassIcon,
   UserIcon,
 } from '@heroicons/react/20/solid'
 
-const Navbar = () => {
+const navbar = () => {
   return (
-    <nav className=" max-w-screen-2xl mx-auto px-5 flex justify-between items-center border-b">
-      <div className="flex ">
-        <div className="flex justify-center items-center font-normal h-12 leading-6 px-3 py-4 ">
+    <nav className=" max-w-screen-2xl mx-auto md:px-2 flex justify-between items-center border-b">
+      <div className="flex">
+        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center text-gray-500 lg:hidden">
+          <Bars4Icon className="h-5 w-5 text-gray-500" />
+        </div>
+        <div className="flex justify-center items-center font-normal h-12 leading-6 px-5 py-4 ">
           <svg
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
@@ -37,31 +41,31 @@ const Navbar = () => {
             </g>
           </svg>
         </div>
-        <div className="justify-center items-center font-normal h-12 leading-6 px-3 py-4 flex ">
+        <div className="justify-center items-center font-normal h-12 text-xl leading-6 px-3 py-4 lg:flex  text-gray-500/50 hidden">
           |
         </div>
-        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
+        <div className="font-normal h-12 leading-6 px-3 py-4 gap-1 lg:flex justify-center items-center text-gray-500 hidden hover:bg-gray-200">
           Products
-          <ChevronDownIcon className="h-6 w-6 text-gray-500" />
+          <ChevronDownIcon className="h-6 w-6" />
         </div>
-        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
-          Solution <ChevronDownIcon className="h-6 w-6 text-gray-500" />
+        <div className="font-normal h-12 leading-6 px-3 py-4 gap-1 lg:flex justify-center items-center text-gray-500 hidden hover:bg-gray-200">
+          Solution <ChevronDownIcon className="h-6 w-6" />
         </div>
-        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
-          Consulting <ChevronDownIcon className="h-6 w-6 text-gray-500" />
+        <div className="font-normal h-12 leading-6 px-3 py-4 gap-1 lg:flex justify-center items-center text-gray-500 hidden hover:bg-gray-200">
+          Consulting <ChevronDownIcon className="h-6 w-6 " />
         </div>
-        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
-          Support <ChevronDownIcon className="h-6 w-6 text-gray-500" />
+        <div className="font-normal h-12 leading-6 px-3 py-4 gap-1 lg:flex justify-center items-center text-gray-500 hidden hover:bg-gray-200">
+          Support <ChevronDownIcon className="h-6 w-6 " />
         </div>
-        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
-          More items <ChevronDownIcon className="h-6 w-6 text-gray-500" />
+        <div className="font-normal h-12 leading-6 px-3 py-4 gap-1 lg:flex justify-center items-center text-gray-500 hidden hover:bg-gray-200">
+          More <ChevronDownIcon className="h-6 w-6 " />
         </div>
       </div>
       <div className="flex">
-        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
+        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center hover:bg-gray-200">
           <MagnifyingGlassIcon className="h-6 w-6 text-gray-500" />
         </div>
-        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center">
+        <div className="font-normal h-12 leading-6 px-3 py-4 flex justify-center items-center hover:bg-gray-200">
           <UserIcon className="h-6 w-6 text-gray-500" />
         </div>
       </div>
@@ -69,4 +73,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default navbar
