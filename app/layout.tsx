@@ -1,9 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Navbar from './components/Navbar'
+import { IBM_Plex_Sans } from 'next/font/google'
+import Navbar from './components/navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const ibm_plex_sans = IBM_Plex_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={ibm_plex_sans.className}>
         <Navbar />
         {children}
       </body>
