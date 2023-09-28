@@ -31,7 +31,7 @@ const HeroCards = () => {
       <div className="flex max-xl:flex-wrap mx-4">
         {cardsdatas.map(({ imagepath, heading, content }) => (
           <div className="flex gap-3 p-4 border max-md:w-full max-xl:w-1/2 xl:w-1/4 hover:bg-gray-200">
-            <div className="w-1/2 xl:w-32 xl:h-1/2 2xl:h-auto 2xl:w-auto lg:h-52">
+            <div className="w-1/2 xl:w-32 xl:h-1/2 2xl:h-[11.3rem] 2xl:w-auto lg:h-52">
               <Image
                 src={`${imagepath}`}
                 alt="card image"
