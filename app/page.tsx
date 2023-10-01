@@ -1,3 +1,4 @@
+import CardList from './components/CardList'
 import { Cardgroup } from './components/Cardgroup'
 import FeatureStory from './components/FeatureStory'
 import HeroCards from './components/HeroCards'
@@ -14,6 +15,7 @@ export default function Home() {
       <Cardgroup />
       <FeatureStory />
       <MeatOurGlobal />
+      <CardList />
       <div className="h-[100vh]"></div>
     </main>
   )
