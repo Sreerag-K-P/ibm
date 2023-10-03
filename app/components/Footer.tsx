@@ -97,8 +97,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-t-[1px] xl:ml-auto xl:w-9/12 p-4 flex flex-wrap max-md:hidden">
-            {footerdatas.map(({ heading, items }) => (
-              <div className="w-1/3 mb-12">
+            {footerdatas.map(({ heading, items }, key) => (
+              <div className="w-1/3 mb-12" key={key}>
                 <h2 className="font-bold py-1">{heading}</h2>
                 {items.map((item, key) => (
                   <h5
@@ -113,11 +113,8 @@ const Footer = () => {
           </div>
           <div className="border-t-[1px] max-md:flex-col md:hidden">
             {footerdatas.map(({ heading }, key) => (
-              <div>
-                <h2
-                  className="border-t-[0.8px] flex text-sm justify-between p-4"
-                  key={key}
-                >
+              <div key={key}>
+                <h2 className="border-t-[0.8px] flex text-sm justify-between p-4">
                   {heading}
                   <ChevronDownIcon className="h-6 w-6 text-gray-100" />
                 </h2>
