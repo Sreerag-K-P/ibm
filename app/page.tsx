@@ -16,7 +16,6 @@ export default function Home() {
       <FeatureStory />
       <MeatOurGlobal />
       <CardList />
-      <div className="h-[100vh]"></div>
     </main>
   )
 }

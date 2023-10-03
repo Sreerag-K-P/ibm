@@ -28,9 +28,9 @@ const navbar = () => {
             <g
               id="Page-1"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g id="ibm-8-bar-logo--h15-copy" fill="#161616">
                 <path
