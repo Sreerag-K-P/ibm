@@ -28,6 +28,7 @@ const HeroSection = () => {
           alt="hero image"
           width={3584}
           height={1633}
+          priority
           className="w-full h-full object-cover"
         />
       </div>

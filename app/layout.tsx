@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { IBM_Plex_Sans } from 'next/font/google'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const ibm_plex_sans = IBM_Plex_Sans({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={ibm_plex_sans.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
